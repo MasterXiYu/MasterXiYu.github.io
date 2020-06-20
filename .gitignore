@@ -1,5 +1,7 @@
-_site
+*Thumbs.db
 .bundle
 .sass-cache
 Gemfile.lock
-.DS_Store
+_site
+*.gem
+*.bak

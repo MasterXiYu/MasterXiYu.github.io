@@ -1,18 +1,29 @@
-# Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
-baseurl:      ""
-paginate:     1
-locale:       "en"
+# Jekyll configuration
 
-# About/contact
-author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+name: Xixia
+description: Welcome to Xixia！
 
-# Gems
-gems:
-  - jekyll-paginate
+# url is currently only used only for the RSS feed in feed.xml
+url: https://github.com/zxixia/jekyll-xixia
 
-#Others
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: '/jekyll-xixia'
+## default date_format
+date_format: 
+  title: "%B-%-d-%Y"
+  archive: "%b"
+  categories: "%b-%Y"
+  tag: "%b-%Y"
+# Language
+lan: "en" 
+
+paginate: 10
+
+highlighter: rouge
 markdown: kramdown
+gems: ['jekyll-paginate']
+
+exclude: ['README.md', 'LICENSE', "*.bak"]

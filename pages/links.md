@@ -3,12 +3,12 @@ layout: page
 title: Links
 description: 没有链接的博客是孤独的
 keywords: 友情链接
-comments: true
+comments: false
 menu: 链接
 permalink: /links/
 ---
 
-> God made relatives. Thank God we can choose our friends.
+> 本博客参考自以下的开源项目，万分感谢
 
 <ul>
 {% for link in site.data.links %}

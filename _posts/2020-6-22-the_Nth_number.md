@@ -36,7 +36,7 @@ class Solution:
 
 不出所料，暴力超时
 
-![Image](/images/blog/the_numbers_tijiao.png)
+![Image](../images/blog/the_numbers_tijiao.jpg)
 
 ### 方法二，数字规律
 

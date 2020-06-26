@@ -24,7 +24,7 @@ components:
     # 不蒜子访问统计
     busuanzi:
         enabled: true
-        start_date: 2020-05-03
+        start_date: 2020-06-23
 # 压缩页面内容
 compress_html:
   clippings: all
@@ -134,6 +134,7 @@ collections:
 #    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 ## 在使用其它评论组件时可点击显示 Disqus
 #lazy_load_disqus : false
+
 
 
 # ---------------- #

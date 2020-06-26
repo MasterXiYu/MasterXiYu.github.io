@@ -1,0 +1,66 @@
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<script
+    async="async"
+    src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+    onload='
+        let pio_container = document.createElement("div");
+        pio_container.classList.add("pio-container");
+        pio_container.classList.add("right");
+        pio_container.style.bottom = "-2rem";
+        pio_container.style.zIndex = "1";
+        document.body.insertAdjacentElement("beforeend", pio_container);
+        let pio_action = document.createElement("div");
+        pio_action.classList.add("pio-action");
+        pio_container.insertAdjacentElement("beforeend", pio_action);
+        let pio_canvas = document.createElement("canvas");
+        pio_canvas.id = "pio";
+        pio_canvas.style.width = "14rem";
+        pio_canvas.width = "600";
+        pio_canvas.height = "800";
+        pio_container.insertAdjacentElement("beforeend", pio_canvas);
+        let pio = new Paul_Pio({
+          "mode": "fixed",
+          "hidden": true,
+          "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+          "content": {
+            "welcome": "欢迎来到习羽正在建设的blog",
+            "touch": ["来到这里的都是绅士≥Ö‿Ö≤", "我不做人了JOJO！","莫伸手，伸手必被捉——鲁迅","流？流氓？不！溜金哇开呀酷裂！"],
+            "link": ["https:\/\/masterxiyu.github.io"],
+            "skin": ["switch？", "遵从召唤而来，你就是我的master吗？"],
+            "hidden": true,
+            "custom": [{
+              "selector": "a",
+              "type": "link",
+            }, {
+              "selector": "#site_search",
+              "text": "想查点什么？"
+            }, {
+              "selector": ".effect-info",
+              "text": "哇，你发现了什么！"
+            }, {
+              "selector": "#site_search",
+              "text": "想搜索什么呢？很多干货哦！"
+            }, {
+              "selector": "#toc",
+              "text": "这是目录~"
+            }, {
+              "selector": ".page-title",
+              "text": "这是标题~"
+            }, {
+              "selector": ".v",
+              "text": "评论没有审核，要对自己的发言负责哦~"
+            }]
+          },
+          "model": [
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/22/model.2018.bls-summer.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-summer.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/wanko/wanko.model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/hijiki/hijiki.model.json",
+            "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
+            ]
+        });'
+></script>

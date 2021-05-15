@@ -11,9 +11,9 @@ keywords: shell，cp，ps，pwd
 
 #### 路径相关
 
-ls （list files）列出目录下所有文件与文件夹；
+ls: （list files）列出目录下所有文件与文件夹；
 
-cd <dir>（change directorys）进入目录，可为绝对目录和相对目录；
+cd \<dir>:（change directorys）进入目录，可为绝对目录和相对目录；
 
 cd - 返回上一次的目录，在上传目录和开发目录切换十分好用。
 
